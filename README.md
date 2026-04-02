@@ -18,6 +18,14 @@ By bridging the gap between massive 2D web data and complex 3D spatial reasoning
 
 ---
 
+> [!IMPORTANT]
+> **Stay Tuned!** We are preparing for the public release in the coming days.
+>
+> **我们将在近期开源，敬请期待。**
+
+---
+
+
 ## 🚀 Key Features
 
 * **Web Data 3D Lifting**: Advanced pipelines to transform large-scale 2D web imagery into geometrically consistent 3D representations.
