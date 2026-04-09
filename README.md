@@ -4,6 +4,11 @@
   <img src="assets/logo.png" alt="OpenSpatial Logo" width="300">
 </p>
 
+<p align="center">
+  <a href="https://arxiv.org/abs/2604.07296"><img src="https://img.shields.io/badge/arXiv-2604.07296-b31b1b.svg" alt="arXiv"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License: Apache-2.0"></a>
+</p>
+
 **OpenSpatial** is an open-source 3D spatial understanding data engine engineered for **high quality**, **extensive scalability**, **broad task diversity**, and **optimized efficiency**. 
 
 By bridging the gap between massive 2D web data and complex 3D spatial reasoning, OpenSpatial provides a comprehensive suite for the next generation of Embodied AI and World Models.
@@ -19,9 +24,9 @@ By bridging the gap between massive 2D web data and complex 3D spatial reasoning
 ---
 
 > [!IMPORTANT]
-> **Stay Tuned!** We are preparing for the public release in the coming days.
+> **We have open-sourced the 3D Data Engine!** Models and data will be released within the next two weeks.
 >
-> **我们将在近期开源，敬请期待。**
+> **3D 数据引擎已开源！** 模型和数据将在未来两周内发布。
 
 ---
 
@@ -43,9 +48,26 @@ By bridging the gap between massive 2D web data and complex 3D spatial reasoning
 
 ## 📅 Roadmap & To-Do List
 
+- [x] **3D Data Engine**: Open-source the core 3D spatial understanding data engine.
+- [ ] **Model Release**: Release the trained spatial understanding model.
+- [ ] **Evaluation Suite**: Open-source the comprehensive evaluation code for spatial tasks.
 - [ ] **OpenSpatial-3M Dataset Release**: Publicly release the large-scale 3M spatial understanding dataset.
 - [ ] **3D Lifting Module**: Integrate the core engine for lifting 2D web data to 3D representations.
-- [ ] **Evaluation Suite**: Open-source the comprehensive evaluation code for spatial tasks.
-- [ ] **Model Release**: Release the trained spatial understanding model.
 - [ ] **More Tasks**: Extend support for more spatial understanding task types.
 <!-- - [ ] **Multi-modal Support**: Extend support for more sensor modalities. -->
+
+## 📄 Citation
+
+If you find OpenSpatial useful for your research, please consider citing our paper:
+
+```bibtex
+@article{openspatial2025,
+  title={OpenSpatial: An Open-Source 3D Spatial Understanding Data Engine},
+  journal={arXiv preprint arXiv:2604.07296},
+  year={2025}
+}
+```
+
+## 📜 License
+
+This project is licensed under the [Apache License 2.0](LICENSE).
