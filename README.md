@@ -24,9 +24,7 @@ By bridging the gap between massive 2D web data and complex 3D spatial reasoning
 ---
 
 > [!IMPORTANT]
-> **We have open-sourced the 3D Data Engine!** Models and data will be released within the next two weeks.
->
-> **3D 数据引擎已开源！** 模型和数据将在未来两周内发布。
+> **We have open-sourced the 3D Data Engine and OpenSpatial-3M Dataset!** Models will be released within the next two weeks.
 
 ---
 
@@ -49,9 +47,9 @@ By bridging the gap between massive 2D web data and complex 3D spatial reasoning
 ## 📅 Roadmap & To-Do List
 
 - [x] **3D Data Engine**: Open-source the core 3D spatial understanding data engine.
+- [x] **OpenSpatial-3M Dataset Release**: Publicly release the large-scale 3M spatial understanding dataset.
 - [ ] **Model Release**: Release the trained spatial understanding model.
 - [ ] **Evaluation Suite**: Open-source the comprehensive evaluation code for spatial tasks.
-- [ ] **OpenSpatial-3M Dataset Release**: Publicly release the large-scale 3M spatial understanding dataset.
 - [ ] **3D Lifting Module**: Integrate the core engine for lifting 2D web data to 3D representations.
 - [ ] **More Tasks**: Extend support for more spatial understanding task types.
 <!-- - [ ] **Multi-modal Support**: Extend support for more sensor modalities. -->
