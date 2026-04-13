@@ -1,11 +1,10 @@
-<!-- # OpenSpatial -->
-
 <p align="center">
   <img src="assets/logo.png" alt="OpenSpatial Logo" width="300">
 </p>
 
 <p align="center">
   <a href="https://arxiv.org/abs/2604.07296"><img src="https://img.shields.io/badge/arXiv-2604.07296-b31b1b.svg" alt="arXiv"></a>
+  <a href="https://huggingface.co/datasets/jdopensource/JoyAI-Image-OpenSpatial"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Datasets-yellow" alt="Hugging Face"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License: Apache-2.0"></a>
 </p>
 
@@ -24,7 +23,7 @@ By bridging the gap between massive 2D web data and complex 3D spatial reasoning
 ---
 
 > [!IMPORTANT]
-> **We have open-sourced the 3D Data Engine and OpenSpatial-3M Dataset!** Models will be released within the next two weeks.
+> **We have open-sourced the 3D Data Engine and OpenSpatial-3M Dataset!** > Access the dataset here: [**JoyAI-Image-OpenSpatial**](https://huggingface.co/datasets/jdopensource/JoyAI-Image-OpenSpatial). Models will be released within the next two weeks.
 
 ---
 
@@ -37,6 +36,12 @@ By bridging the gap between massive 2D web data and complex 3D spatial reasoning
 * **Comprehensive Evaluation**: Built-in benchmarking suite to evaluate spatial understanding capabilities across different model architectures.
 * **High Efficiency**: Optimized for large-scale data processing with scalable distributed computing support.
 
+## 📊 Dataset
+
+The **OpenSpatial-3M** dataset is now available on Hugging Face. It contains 3 million high-fidelity samples designed to enhance 3D spatial reasoning in large multi-modal models.
+
+* **Repository**: [jdopensource/JoyAI-Image-OpenSpatial](https://huggingface.co/datasets/jdopensource/JoyAI-Image-OpenSpatial)
+
 ## 📖 Documentation
 
 | Document | Description |
@@ -47,12 +52,11 @@ By bridging the gap between massive 2D web data and complex 3D spatial reasoning
 ## 📅 Roadmap & To-Do List
 
 - [x] **3D Data Engine**: Open-source the core 3D spatial understanding data engine.
-- [x] **OpenSpatial-3M Dataset Release**: Publicly release the large-scale 3M spatial understanding dataset.
+- [x] **OpenSpatial-3M Dataset Release**: Publicly release the large-scale 3M spatial understanding dataset. [[HF Link]](https://huggingface.co/datasets/jdopensource/JoyAI-Image-OpenSpatial)
 - [ ] **Model Release**: Release the trained spatial understanding model.
 - [ ] **Evaluation Suite**: Open-source the comprehensive evaluation code for spatial tasks.
 - [ ] **3D Lifting Module**: Integrate the core engine for lifting 2D web data to 3D representations.
 - [ ] **More Tasks**: Extend support for more spatial understanding task types.
-<!-- - [ ] **Multi-modal Support**: Extend support for more sensor modalities. -->
 
 ## 📄 Citation
 
@@ -64,8 +68,3 @@ If you find OpenSpatial useful for your research, please consider citing our pap
   journal={arXiv preprint arXiv:2604.07296},
   year={2025}
 }
-```
-
-## 📜 License
-
-This project is licensed under the [Apache License 2.0](LICENSE).
