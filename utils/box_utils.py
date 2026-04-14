@@ -15,14 +15,14 @@ def compute_box_3d_points(size):
     """
     hs = np.asarray(size) / 2
     return np.array([
-        [ hs[0],  hs[1],  hs[2]],
-        [ hs[0],  hs[1], -hs[2]],
-        [ hs[0], -hs[1],  hs[2]],
-        [ hs[0], -hs[1], -hs[2]],
+        [-hs[0], -hs[1], -hs[2]],
+        [-hs[0], -hs[1],  hs[2]],
         [-hs[0],  hs[1],  hs[2]],
         [-hs[0],  hs[1], -hs[2]],
-        [-hs[0], -hs[1],  hs[2]],
-        [-hs[0], -hs[1], -hs[2]],
+        [ hs[0], -hs[1], -hs[2]],
+        [ hs[0], -hs[1],  hs[2]],
+        [ hs[0],  hs[1],  hs[2]],
+        [ hs[0],  hs[1], -hs[2]],
     ])
 
 
