@@ -13,6 +13,7 @@ pipeline:
         file_name: flatten
         method: SampleFlattener
         anchor_col: image
+        split_col_list: ['image', 'id', 'depth_map', 'pose', "intrinsic"]
         update_keys: ['image', 'id', 'obj_tags', 'bboxes_3d_world_coords', 'depth_map', 'pose', "intrinsic"]
         output_dir:
 
