@@ -22,11 +22,10 @@ By bridging the gap between massive 2D web data and complex 3D spatial reasoning
 
 ---
 
-> [!IMPORTANT]
-> **We have open-sourced the 3D Data Engine and OpenSpatial-3M Dataset!** > Access the dataset here: [**JoyAI-Image-OpenSpatial**](https://huggingface.co/datasets/jdopensource/JoyAI-Image-OpenSpatial). Models will be released within the next two weeks.
 
----
-
+## 🔥 News
+- **[2026.04.15]** 🎉 We have released the open-source subset of the **OpenSpatial-3M** dataset! Check it out on [Hugging Face](https://huggingface.co/datasets/jdopensource/JoyAI-Image-OpenSpatial).
+- **[2026.04.08]** 🎉 The **OpenSpatial 3D data engine** is now officially open-sourced.
 
 ## 🚀 Key Features
 
