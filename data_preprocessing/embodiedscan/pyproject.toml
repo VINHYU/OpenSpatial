@@ -24,7 +24,7 @@ hf = ["huggingface_hub"]
 dev = ["pytest>=7.0"]
 
 [tool.setuptools.packages.find]
-where = ["src"]
+where = ["."]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
