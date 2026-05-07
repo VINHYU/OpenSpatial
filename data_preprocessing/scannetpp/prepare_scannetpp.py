@@ -142,6 +142,14 @@ def process_single_scene(
         if not rgb_files:
             return None
 
+        # Get RGB resolution from the first frame
+        rgb_sample = cv2.imread(rgb_files[0])
+        rgb_h, rgb_w = rgb_sample.shape[:2]
+
+        # Directory for resized depth maps
+        depth_resized_dir = os.path.join(base_sensor_path, "depth_resized")
+        os.makedirs(depth_resized_dir, exist_ok=True)
+
         ids, images, poses, intrinsics, depth_maps = [], [], [], [], []
         for rgb_file in rgb_files:
             abs_rgb_path = os.path.abspath(rgb_file)
@@ -153,7 +161,15 @@ def process_single_scene(
 
             expected_depth = os.path.join(depth_dir, f"{frame_name}.png")
             if os.path.exists(expected_depth):
-                depth_maps.append(os.path.abspath(expected_depth))
+                resized_depth_path = os.path.join(depth_resized_dir, f"{frame_name}.png")
+                if not os.path.exists(resized_depth_path):
+                    depth_raw = cv2.imread(expected_depth, cv2.IMREAD_UNCHANGED)
+                    if depth_raw.shape[:2] != (rgb_h, rgb_w):
+                        depth_resized = cv2.resize(depth_raw, (rgb_w, rgb_h), interpolation=cv2.INTER_NEAREST)
+                    else:
+                        depth_resized = depth_raw
+                    cv2.imwrite(resized_depth_path, depth_resized)
+                depth_maps.append(os.path.abspath(resized_depth_path))
             else:
                 print(f"[scannetpp] Depth not found for {frame_name} in {scene_id}")
                 continue
