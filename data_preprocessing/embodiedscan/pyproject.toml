@@ -17,6 +17,7 @@ dependencies = [
     "tqdm",
     "Pillow",
     "pyyaml",
+    "opencv-python",
 ]
 
 [project.optional-dependencies]

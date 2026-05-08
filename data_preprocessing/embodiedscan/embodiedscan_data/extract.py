@@ -21,12 +21,12 @@ _worker_data_root = None
 def _init_worker(config_name: str, data_root: str):
     """Initialize Explorer in each worker process."""
     global _worker_explorer, _worker_config, _worker_data_root
-    from embodiedscan.explorer import EmbodiedScanExplorer
+    from embodiedscan_data.explorer import ExtendedExplorer
 
     _worker_config = get_dataset_config(config_name)
     _worker_data_root = data_root
     explorer_kwargs = _worker_config.get_explorer_kwargs(data_root)
-    _worker_explorer = EmbodiedScanExplorer(**explorer_kwargs)
+    _worker_explorer = ExtendedExplorer(**explorer_kwargs)
 
 
 def _process_single(args):
