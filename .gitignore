@@ -1,4 +1,5 @@
 outputs/
+models/
 env
 *.pyc
 __pycache__/

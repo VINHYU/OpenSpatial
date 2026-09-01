@@ -164,7 +164,7 @@ See `data_preprocessing/embodiedscan/README.md` for detailed data directory stru
 
 #### 3D Lifting for Unannotated Web Data
 
-Coming soon (expected May 2025).
+See the [3D Lifting Module](../README.md#3d-lifting-module) section for installation, model downloads, input format, and the standalone command.
 
 ---
 
