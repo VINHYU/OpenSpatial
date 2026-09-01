@@ -5,6 +5,7 @@
 <p align="center">
   <a href="https://arxiv.org/abs/2604.07296"><img src="https://img.shields.io/badge/arXiv-2604.07296-b31b1b.svg" alt="arXiv"></a>
   <a href="https://huggingface.co/datasets/jdopensource/JoyAI-Image-OpenSpatial"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Datasets-yellow" alt="Hugging Face"></a>
+  <a href="https://huggingface.co/collections/VINHYU/openspatial-models-6a96dc5ba822865200e51e5c"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-yellow" alt="Hugging Face Models"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License: Apache-2.0"></a>
 </p>
 
@@ -24,6 +25,7 @@ By bridging the gap between massive 2D web data and complex 3D spatial reasoning
 
 
 ## 🔥 News
+- **[2026.09.01]** 🎉 We have released four **OpenSpatial spatial reasoning models**, covering InternVL2.5, InternVL3, Qwen2.5-VL, and Qwen3-VL backbones. See the [Model Zoo](#-model-zoo) below.
 - **[2026.04.15]** 🎉 We have released the open-source subset of the **OpenSpatial-3M** dataset! Check it out on [Hugging Face](https://huggingface.co/datasets/jdopensource/JoyAI-Image-OpenSpatial).
 - **[2026.04.08]** 🎉 The **OpenSpatial 3D data engine** is now officially open-sourced.
 
@@ -40,6 +42,26 @@ By bridging the gap between massive 2D web data and complex 3D spatial reasoning
 The **OpenSpatial-3M** dataset is now available on Hugging Face. It contains 3 million high-fidelity samples designed to enhance 3D spatial reasoning in large multi-modal models.
 
 * **Repository**: [jdopensource/JoyAI-Image-OpenSpatial](https://huggingface.co/datasets/jdopensource/JoyAI-Image-OpenSpatial)
+
+## 🤗 Model Zoo
+
+We release four OpenSpatial checkpoints fine-tuned for spatial understanding and reasoning. The repositories contain full, inference-ready weights in `safetensors` format.
+
+| Model | Base model | Checkpoint |
+|---|---|---|
+| OpenSpatial-InternVL2.5-8B | [OpenGVLab/InternVL2_5-8B](https://huggingface.co/OpenGVLab/InternVL2_5-8B) | [Hugging Face](https://huggingface.co/VINHYU/OpenSpatial-InternVL2.5-8B) |
+| OpenSpatial-InternVL3-8B | [OpenGVLab/InternVL3-8B](https://huggingface.co/OpenGVLab/InternVL3-8B) | [Hugging Face](https://huggingface.co/VINHYU/OpenSpatial-InternVL3-8B) |
+| OpenSpatial-Qwen2.5-VL-7B | [Qwen/Qwen2.5-VL-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct) | [Hugging Face](https://huggingface.co/VINHYU/OpenSpatial-Qwen2.5-VL-7B) |
+| OpenSpatial-Qwen3-VL-8B | [Qwen/Qwen3-VL-8B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct) | [Hugging Face](https://huggingface.co/VINHYU/OpenSpatial-Qwen3-VL-8B) |
+
+Download a checkpoint with the Hugging Face CLI:
+
+```bash
+hf download VINHYU/OpenSpatial-Qwen3-VL-8B \
+  --local-dir OpenSpatial-Qwen3-VL-8B
+```
+
+See each model card for architecture-specific loading instructions and base-model requirements.
 
 ## 📖 Documentation
 
@@ -129,7 +151,7 @@ python -m data_preprocessing.lifting \
 
 - [x] **3D Data Engine**: Open-source the core 3D spatial understanding data engine.
 - [x] **OpenSpatial-3M Dataset Release**: Publicly release the large-scale 3M spatial understanding dataset. [[HF Link]](https://huggingface.co/datasets/jdopensource/JoyAI-Image-OpenSpatial)
-- [ ] **Model Release**: Release the trained spatial understanding model.
+- [x] **Model Release**: Release four trained spatial understanding models. [[HF Collection]](https://huggingface.co/collections/VINHYU/openspatial-models-6a96dc5ba822865200e51e5c)
 - [ ] **[Evaluation Suite](https://github.com/open-compass/vlmevalkit)**: Open-source the comprehensive evaluation code for spatial tasks.
 - [x] **3D Lifting Module**: Release the core engine for lifting 2D web data to 3D representations.
 - [ ] **More Tasks**: Extend support for more spatial understanding task types.
@@ -144,3 +166,4 @@ If you find OpenSpatial useful for your research, please consider citing our pap
   journal={arXiv preprint arXiv:2604.07296},
   year={2025}
 }
+```

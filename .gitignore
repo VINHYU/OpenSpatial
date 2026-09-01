@@ -11,6 +11,10 @@ my_scripts
 output/
 vis/
 scripts/
+!scripts/
+scripts/*
+!scripts/upload_models_to_hf.py
 config/debug*.yaml
 tests/
 .pytest_cache/
+.hf-upload/
