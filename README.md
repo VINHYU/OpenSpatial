@@ -25,7 +25,8 @@ By bridging the gap between massive 2D web data and complex 3D spatial reasoning
 
 
 ## 🔥 News
-- **[2026.09.01]** 🎉 We have released four **OpenSpatial spatial reasoning models**, covering InternVL2.5, InternVL3, Qwen2.5-VL, and Qwen3-VL backbones. See the [Model Zoo](#-model-zoo) below.
+- **[2026.09.02]** 🚀 We have released the **3D Lifting Module**, which reconstructs metric scene geometry and object-level 3D bounding boxes from ordered images or video. See the [3D Lifting documentation](#3d-lifting-module).
+- **[2026.09.01]** 🤗 We have released the model weights for four **OpenSpatial spatial reasoning models**, covering InternVL2.5, InternVL3, Qwen2.5-VL, and Qwen3-VL backbones. Explore the [Hugging Face Collection](https://huggingface.co/collections/VINHYU/openspatial-models-6a96dc5ba822865200e51e5c) or see the [Model Zoo](#-model-zoo).
 - **[2026.04.15]** 🎉 We have released the open-source subset of the **OpenSpatial-3M** dataset! Check it out on [Hugging Face](https://huggingface.co/datasets/jdopensource/JoyAI-Image-OpenSpatial).
 - **[2026.04.08]** 🎉 The **OpenSpatial 3D data engine** is now officially open-sourced.
 
@@ -45,7 +46,7 @@ The **OpenSpatial-3M** dataset is now available on Hugging Face. It contains 3 m
 
 ## 🤗 Model Zoo
 
-We release four OpenSpatial checkpoints fine-tuned for spatial understanding and reasoning. The repositories contain full, inference-ready weights in `safetensors` format.
+We release four OpenSpatial checkpoints fine-tuned for spatial understanding and reasoning. The repositories contain full, inference-ready weights in `safetensors` format and are grouped in the [OpenSpatial Models Collection](https://huggingface.co/collections/VINHYU/openspatial-models-6a96dc5ba822865200e51e5c).
 
 | Model | Base model | Checkpoint |
 |---|---|---|
@@ -151,9 +152,9 @@ python -m data_preprocessing.lifting \
 
 - [x] **3D Data Engine**: Open-source the core 3D spatial understanding data engine.
 - [x] **OpenSpatial-3M Dataset Release**: Publicly release the large-scale 3M spatial understanding dataset. [[HF Link]](https://huggingface.co/datasets/jdopensource/JoyAI-Image-OpenSpatial)
-- [x] **Model Release**: Release four trained spatial understanding models. [[HF Collection]](https://huggingface.co/collections/VINHYU/openspatial-models-6a96dc5ba822865200e51e5c)
+- [x] **Model Weights Release**: Release four trained spatial understanding models with InternVL and Qwen-VL backbones. [[Model Zoo]](#-model-zoo) [[HF Collection]](https://huggingface.co/collections/VINHYU/openspatial-models-6a96dc5ba822865200e51e5c)
 - [ ] **[Evaluation Suite](https://github.com/open-compass/vlmevalkit)**: Open-source the comprehensive evaluation code for spatial tasks.
-- [x] **3D Lifting Module**: Release the core engine for lifting 2D web data to 3D representations.
+- [x] **3D Lifting Module**: Release the core engine for lifting image sequences and video to metric 3D representations. [[Documentation]](#3d-lifting-module)
 - [ ] **More Tasks**: Extend support for more spatial understanding task types.
 
 ## 📄 Citation
