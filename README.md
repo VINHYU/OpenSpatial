@@ -153,9 +153,7 @@ python -m data_preprocessing.lifting \
 - [x] **3D Data Engine**: Open-source the core 3D spatial understanding data engine.
 - [x] **OpenSpatial-3M Dataset Release**: Publicly release the large-scale 3M spatial understanding dataset. [[HF Link]](https://huggingface.co/datasets/jdopensource/JoyAI-Image-OpenSpatial)
 - [x] **Model Weights Release**: Release four trained spatial understanding models with InternVL and Qwen-VL backbones. [[Model Zoo]](#-model-zoo) [[HF Collection]](https://huggingface.co/collections/VINHYU/openspatial-models-6a96dc5ba822865200e51e5c)
-- [ ] **[Evaluation Suite](https://github.com/open-compass/vlmevalkit)**: Open-source the comprehensive evaluation code for spatial tasks.
 - [x] **3D Lifting Module**: Release the core engine for lifting image sequences and video to metric 3D representations. [[Documentation]](#3d-lifting-module)
-- [ ] **More Tasks**: Extend support for more spatial understanding task types.
 
 ## 📄 Citation
 
