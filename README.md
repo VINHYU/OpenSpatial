@@ -27,6 +27,7 @@ By bridging the gap between massive 2D web data and complex 3D spatial reasoning
 ## 🔥 News
 - **[2026.09.02]** 🚀 We have released the **3D Lifting Module**, which reconstructs metric scene geometry and object-level 3D bounding boxes from ordered images or video. See the [3D Lifting documentation](#3d-lifting-module).
 - **[2026.09.01]** 🤗 We have released the model weights for four **OpenSpatial spatial reasoning models**, covering InternVL2.5, InternVL3, Qwen2.5-VL, and Qwen3-VL backbones. Explore the [Hugging Face Collection](https://huggingface.co/collections/VINHYU/openspatial-models-6a96dc5ba822865200e51e5c) or see the [Model Zoo](#-model-zoo).
+- **[2026.06.20]** 🎉 **OpenSpatial has been accepted to ECCV 2026!**
 - **[2026.04.15]** 🎉 We have released the open-source subset of the **OpenSpatial-3M** dataset! Check it out on [Hugging Face](https://huggingface.co/datasets/jdopensource/JoyAI-Image-OpenSpatial).
 - **[2026.04.08]** 🎉 The **OpenSpatial 3D data engine** is now officially open-sourced.
 
@@ -160,9 +161,9 @@ python -m data_preprocessing.lifting \
 If you find OpenSpatial useful for your research, please consider citing our paper:
 
 ```bibtex
-@article{openspatial2025,
+@inproceedings{openspatial2026,
   title={OpenSpatial: An Open-Source 3D Spatial Understanding Data Engine},
-  journal={arXiv preprint arXiv:2604.07296},
-  year={2025}
+  booktitle={European Conference on Computer Vision (ECCV)},
+  year={2026}
 }
 ```
